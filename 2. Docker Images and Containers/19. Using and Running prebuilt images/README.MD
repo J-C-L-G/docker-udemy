@@ -3,13 +3,21 @@
 1. `Image`: Logic, Code (Blueprint)
 2. `Container`: Running Instance of Software based on an `Image`.
 
+## Downloading an Image
 To download (if required) and use the node image from docker hub
 
+```shell
+docker pull node
+```
+
 ![docker-image.png](docker-image.png)
+
+## Running a Container from an Image
 
 ```shell
 docker run node
 ```
+>NOTE: it will `pull` the image if it was not downloaded previously.
 
 To see the containers created `ps` stands for processes `-a` for all.
 
