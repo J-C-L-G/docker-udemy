@@ -4,7 +4,7 @@ FROM node
 WORKDIR /app
 
 # [Host Machine] [Image/Container FS] <- From working directory or root if whole path is provided like here.
-COPY .. /app
+COPY . /app
 
 # Run command in the image (from root or workdir if provided)
 RUN npm install
