@@ -55,7 +55,8 @@ dfc6adb4d356   aaab7435aa4a   "docker-entrypoint.s…"   7 minutes ago   Up 4 se
 docker logs dfc6adb4d356
 ```
 
-If we need to retrieve existing logs and keep listening for them (getting `attached` to it) we can use the `-f` flag.
+If we need to retrieve existing logs and keep "listening" for them (getting `attached` to it) we can use the 
+**follow** `-f` flag.
 
 ```shell
 docker logs dfc6adb4d356 -f
