@@ -1,5 +1,7 @@
 # Pulling `images` from Docker hub
 
+![docker-hub-website.png](docker-hub-website.png)
+
 Since the image was pushed as public, we don't have to be authenticated in order to download it,
 we can make reference to the repository that we created
 ```shell
