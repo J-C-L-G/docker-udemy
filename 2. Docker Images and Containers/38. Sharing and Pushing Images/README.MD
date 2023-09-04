@@ -44,6 +44,8 @@ we can proceed and push this image to the docker hub registry
 docker push jclgps/hello-world-node-app:latest_2023
 ```
 
+![docker-hub-local-images.png](docker-hub-local-images.png)
+
 ```shell-output
 docker push jclgps/hello-world-node-app:latest_2023
 The push refers to repository [docker.io/jclgps/hello-world-node-app]
@@ -78,7 +80,5 @@ b485c6cd33a6: Mounted from library/python
 ff61a9b258e5: Mounted from library/python 
 latest_2023: digest: sha256:fd2ab0d46540fe0c630c16e15e39d3ec705f3190d5d273ad2654c2718dff3aee size: 2835
 ```
-
-![docker-hub-local-images.png](docker-hub-local-images.png)
 
 ![docker-hub-website.png](docker-hub-website.png)
