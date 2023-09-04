@@ -4,13 +4,13 @@ FROM node
 WORKDIR /app
 
 # [Host Machine] [Image/Container FS] <- From working directory or root if whole path is provided like here.
-COPY . /app
+COPY package.json /app
 
 # Run command in the image (from root or workdir if provided)
 RUN npm install
 
-# This would be incorrect since the image should be only the blue print and not execution
-#RUN node app.js
+# [Host Machine] [Image/Container FS] <- From working directory or root if whole path is provided like here.
+COPY . /app
 
 # This instructs docker to expose an internal port fromt he container to the local machine
 # (ONLY FOR DOCUMENTATION *Optional*) to use the port we need to execute with the -p flag
