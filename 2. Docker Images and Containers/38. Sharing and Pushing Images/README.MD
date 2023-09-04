@@ -44,7 +44,7 @@ we can proceed and push this image to the docker hub registry
 docker push jclgps/hello-world-node-app:latest_2023
 ```
 
-![docker-hub-local-images.png](docker-hub-local-images.png)
+![docker-hub-local-available-images.png](docker-hub-local-available-images.png)
 
 ```shell-output
 docker push jclgps/hello-world-node-app:latest_2023
