@@ -59,6 +59,8 @@ CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS 
 
 ![dockerized-app-homepage.png](dockerized-app-homepage.png)
 
+![docker-image-file-in-static-folder-inside-container.png](docker-image-file-in-static-folder-inside-container.png)
+
 ![dockerized-app-info.png](dockerized-app-info.png)
 
 ## Retrieving the "feedback" folder from the container
