@@ -60,3 +60,21 @@ CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS 
 ![dockerized-app-homepage.png](dockerized-app-homepage.png)
 
 ![dockerized-app-info.png](dockerized-app-info.png)
+
+## Retrieving the "feedback" folder from the container
+
+```shell-output
+docker ps -a
+CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS                       PORTS     NAMES
+9e7f0589f225   feedback-node      "docker-entrypoint.s…"   16 minutes ago   Exited (137) 2 minutes ago             feedback-node-container
+```
+
+```shell
+docker cp 9e7f0589f225:app/feedback/ ./feedback_from_container/ 
+```
+
+```shell-output   
+Successfully copied 4.61kB to /Users/JCLG/Documents/Code/docker-udemy/3. Managing Data and Working with Volumes/45. Writing a File inside a Container Demo App/feedback_from_container/
+```
+
+![docker-files-retrieved-from-container.png](docker-files-retrieved-from-container.png)
