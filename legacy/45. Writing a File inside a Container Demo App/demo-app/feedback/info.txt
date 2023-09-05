@@ -1,1 +1,0 @@
-This data will have to be pulled and saved from container, before being removed.
