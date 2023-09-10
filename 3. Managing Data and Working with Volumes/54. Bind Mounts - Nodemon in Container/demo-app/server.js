@@ -13,6 +13,7 @@ app.use(express.static('public'));
 app.use('/feedback', express.static('feedback'));
 
 app.get('/', (req, res) => {
+  console.log(`GET: @${Date.now()}`)
   const filePath = path.join(__dirname, 'pages', 'feedback.html');
   res.sendFile(filePath);
 });
