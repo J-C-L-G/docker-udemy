@@ -97,6 +97,8 @@ docker build -t feedback-node-copy:anonymous-volume .
 docker run -d --name feedback-node-container-copy-anonymous-volume -p 3000:80 feedback-node-copy:anonymous-volume
 ```
 
+![docker-rebuild-image.png](docker-rebuild-image.png)
+
 ## Listing and Inspecting `Volumes`
 
 If we `stop` and `start` now the container keeps the files as long as the container is not removed
