@@ -50,6 +50,8 @@ we need to use a more specific volume to bypass the `read only` restriction and 
 docker run -d -p 3000:80 --name feedback-app-watch-container-read-only -v /app/temp -v /app/feedback -v /app/node_modules -v "$(pwd)/demo-app:/app:ro" --rm feedback-app-watch-ro:bind-local
 ```
 
+![docker-anonymous-volumes.png](docker-anonymous-volumes.png)
+
 ```shell-output
  docker ps               
 CONTAINER ID   IMAGE                              COMMAND                  CREATED              STATUS              PORTS                  NAMES
